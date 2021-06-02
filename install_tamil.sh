@@ -25,10 +25,10 @@ im-config -n ibus
 # Default is Phonetic
 if [[$1 = "-tamil99"]]; then
     echo "Tamil99 keyboard selected"
-    gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'in+eng'), ('ibus', 'm17n:ta:tamil99')]"
+    gsettings set org.gnome.desktop.input-sources sources "[('xfce', 'in+eng'), ('ibus', 'm17n:ta:tamil99')]"
 else
     echo "Default keyboard selected(Phonetic)"
-    gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'in+eng'), ('ibus', 'm17n:ta:phonetic')]"
+    gsettings set org.gnome.desktop.input-sources sources "[('xfce', 'in+eng'), ('ibus', 'm17n:ta:phonetic')]"
 fi
 
 echo "Please \"Restart\" to make the changes effect"
